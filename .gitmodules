@@ -1,0 +1,3 @@
+[submodule "FreeMote"]
+	path = FreeMote
+	url = https://github.com/UlyssesWu/FreeMote.git
