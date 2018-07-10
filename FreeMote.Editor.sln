@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeMote.Editor", "FreeMote.Editor\FreeMote.Editor.csproj", "{7D28CD9C-2E61-4155-84E3-755241244850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeMote", "FreeMote\FreeMote\FreeMote.csproj", "{D43CA425-6476-4AE3-A3D8-BBCAC0F0383C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeMote.Psb", "FreeMote\FreeMote.Psb\FreeMote.Psb.csproj", "{C0B2C2FF-D8F4-497E-8312-C2AF1BB6E7F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeMote.PsBuild", "FreeMote\FreeMote.PsBuild\FreeMote.PsBuild.csproj", "{717A63DE-E599-4134-92AB-40A17C326DA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D28CD9C-2E61-4155-84E3-755241244850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D28CD9C-2E61-4155-84E3-755241244850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D28CD9C-2E61-4155-84E3-755241244850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D28CD9C-2E61-4155-84E3-755241244850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D43CA425-6476-4AE3-A3D8-BBCAC0F0383C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43CA425-6476-4AE3-A3D8-BBCAC0F0383C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D43CA425-6476-4AE3-A3D8-BBCAC0F0383C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D43CA425-6476-4AE3-A3D8-BBCAC0F0383C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B2C2FF-D8F4-497E-8312-C2AF1BB6E7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B2C2FF-D8F4-497E-8312-C2AF1BB6E7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B2C2FF-D8F4-497E-8312-C2AF1BB6E7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B2C2FF-D8F4-497E-8312-C2AF1BB6E7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717A63DE-E599-4134-92AB-40A17C326DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717A63DE-E599-4134-92AB-40A17C326DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717A63DE-E599-4134-92AB-40A17C326DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717A63DE-E599-4134-92AB-40A17C326DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC52E967-875C-4321-8BE7-8938F7DB68B5}
+	EndGlobalSection
+EndGlobal

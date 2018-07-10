@@ -1,0 +1,41 @@
+﻿<mah:MetroWindow x:Class="FreeMote.Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FreeMote.Editor"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:controls="clr-namespace:FreeMote.Editor.Controls"
+        mc:Ignorable="d"
+        Title="FreeMote Editor" TitleCharacterCasing="Normal" Height="618" Width="1000">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File"></MenuItem>
+                <MenuItem Header="_Help">
+                    <MenuItem Header="_About"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <StatusBar DockPanel.Dock="Bottom" MinHeight="30"></StatusBar>
+
+            <mah:MetroAnimatedSingleRowTabControl mah:TabControlHelper.Underlined="SelectedTabItem" Grid.Row="1">
+                <TabItem Header="Content">
+                    <controls:ContentView></controls:ContentView>
+                </TabItem>
+                <TabItem Header="Texture">
+                    <controls:TextureView></controls:TextureView>
+                </TabItem>
+                <TabItem Header="Animation">
+
+                </TabItem>
+            </mah:MetroAnimatedSingleRowTabControl>
+        </DockPanel>
+    </Grid>
+</mah:MetroWindow>
+
+
+
+
+
+
+
