@@ -14,6 +14,7 @@ namespace FreeMote.Editor
         private PsbJsonViewModel _model = new PsbJsonViewModel();
         public MainWindow()
         {
+            _model.WindowDispatcher = Dispatcher;
             DataContext = _model;
             InitializeComponent();
             FreeMount.Init();

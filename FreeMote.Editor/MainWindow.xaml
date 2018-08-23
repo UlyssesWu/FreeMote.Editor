@@ -22,6 +22,9 @@
                 </MenuItem>
             </Menu>
             <StatusBar DockPanel.Dock="Bottom" MinHeight="30">
+                <StatusBarItem>
+                    <TextBlock>Made by Ulysses from Project AZUSA</TextBlock>
+                </StatusBarItem>
                 <StatusBarItem Width="100" HorizontalAlignment="Right" DockPanel.Dock="Right">
                     <ProgressBar Margin="0,2,0,0" Name="ProcessProgress" Width="90"></ProgressBar>
                 </StatusBarItem>
