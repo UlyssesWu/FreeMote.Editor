@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -89,6 +90,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\PsbJsonViewModel.cs" />
     <Compile Include="Models\PsbViewModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -117,9 +119,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FreeMote\FreeMote.PsBuild\FreeMote.PsBuild.csproj">
+      <Project>{717a63de-e599-4134-92ab-40a17c326da3}</Project>
+      <Name>FreeMote.PsBuild</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FreeMote\FreeMote.Psb\FreeMote.Psb.csproj">
       <Project>{C0B2C2FF-D8F4-497E-8312-C2AF1BB6E7F7}</Project>
       <Name>FreeMote.Psb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FreeMote\FreeMote\FreeMote.csproj">
+      <Project>{D43CA425-6476-4AE3-A3D8-BBCAC0F0383C}</Project>
+      <Name>FreeMote</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +138,12 @@
   <ItemGroup>
     <PackageReference Include="MahApps.Metro">
       <Version>1.6.5</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="WriteableBitmapEx">
+      <Version>1.5.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

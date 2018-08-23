@@ -18,12 +18,13 @@
         </ScrollViewer>
 
         <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"></GridSplitter>
-        <ScrollViewer Grid.Column="2">
-            <Rectangle>
+        <ScrollViewer Grid.Column="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Image Stretch="None" Source="{Binding RenderImage}"></Image>
+            <!--<Rectangle>
                 <Rectangle.Fill>
                     <ImageBrush Stretch="None" ImageSource="{Binding RenderImage}"/>
                 </Rectangle.Fill>
-            </Rectangle>
+            </Rectangle>-->
         </ScrollViewer>
     </Grid>
 </UserControl>

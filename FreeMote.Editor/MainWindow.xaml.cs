@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Input;
+using FreeMote.Editor.Models;
+using FreeMote.Plugins;
 using MahApps.Metro.Controls;
+using Microsoft.Win32;
 
 namespace FreeMote.Editor
 {
@@ -21,9 +11,27 @@ namespace FreeMote.Editor
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        private PsbJsonViewModel _model = new PsbJsonViewModel();
         public MainWindow()
         {
+            DataContext = _model;
             InitializeComponent();
+            FreeMount.Init();
+        }
+
+        private void OpenFile(object sender, ExecutedRoutedEventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog()
+            {
+                Title = "Select a PSB",
+                Multiselect = false,
+                Filter = "PSB Json(*.json)|*.json|PSB File(*.psb)|*.psb;*.mmo;|All Files|*.*",
+            };
+
+            if (dialog.ShowDialog() == true)
+            {
+                _model.Load(dialog.FileName);
+            }
         }
     }
 }

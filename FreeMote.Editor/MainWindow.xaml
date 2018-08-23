@@ -8,23 +8,34 @@
         xmlns:controls="clr-namespace:FreeMote.Editor.Controls"
         mc:Ignorable="d"
         Title="FreeMote Editor" TitleCharacterCasing="Normal" Height="618" Width="1000">
+    <Window.CommandBindings>
+        <CommandBinding Command="Open" Executed="OpenFile"></CommandBinding>
+    </Window.CommandBindings>
     <Grid>
         <DockPanel LastChildFill="True">
             <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File"></MenuItem>
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open" InputGestureText="Ctrl+O" Command="Open"></MenuItem>
+                </MenuItem>
                 <MenuItem Header="_Help">
                     <MenuItem Header="_About"></MenuItem>
                 </MenuItem>
             </Menu>
-            <StatusBar DockPanel.Dock="Bottom" MinHeight="30"></StatusBar>
+            <StatusBar DockPanel.Dock="Bottom" MinHeight="30">
+                <StatusBarItem Width="100" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                    <ProgressBar Margin="0,2,0,0" Name="ProcessProgress" Width="90"></ProgressBar>
+                </StatusBarItem>
+                
+            </StatusBar>
 
             <mah:MetroAnimatedSingleRowTabControl mah:TabControlHelper.Underlined="SelectedTabItem" Grid.Row="1">
-                <TabItem Header="Content">
-                    <controls:ContentView></controls:ContentView>
-                </TabItem>
                 <TabItem Header="Texture">
                     <controls:TextureView></controls:TextureView>
                 </TabItem>
+                <TabItem Header="Content">
+                    <controls:ContentView></controls:ContentView>
+                </TabItem>
+
                 <TabItem Header="Animation">
 
                 </TabItem>
